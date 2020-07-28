@@ -9,16 +9,21 @@ import Console from './layout/console';
 
 class App extends Component {
   state = {
-    permission: false
+    permission: false,
+    shipType: ""
   }
 
-  permissionAllowed = () => {
+  permissionAllowed = (event) => {
+    let shipType = event.target.id;
     this.setState(prevState => ({
-      permission: true
+      permission: true,
+      shipType: shipType
     }))
   }
 
   render(){
+
+    console.log(this.state.shipType)
     return (
       <div className="container">
         <Header/>

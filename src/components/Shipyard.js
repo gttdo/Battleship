@@ -9,31 +9,31 @@ class Shipyard extends Component {
                     <li className="shipyard--ship">
                         <div className="shipyard--ship-dock">
                             <p className="shipyard--ship-dock-type">Carrier</p>
-                            <button onClick={this.props.boardPermission}>Add</button>
+                            <button id="carrier" onClick={this.props.boardPermission}>Add</button>
                         </div>
                     </li>
                     <li className="shipyard--ship">
                         <div className="shipyard--ship-dock">
                             <p className="shipyard--ship-dock-type">Battlecruiser</p>
-                            <button>Add</button>
+                            <button id="battlecruiser" onClick={this.props.boardPermission}>Add</button>
                         </div>
                     </li>
                     <li className="shipyard--ship">
                         <div className="shipyard--ship-dock">
                             <p className="shipyard--ship-dock-type">Destroyer</p>
-                            <button>Add</button>
+                            <button id="destroyer" onClick={this.props.boardPermission}>Add</button>
                         </div>
                     </li>
                     <li className="shipyard--ship">
                         <div className="shipyard--ship-dock">
                             <p className="shipyard--ship-dock-type">Submarine</p>
-                            <button>Add</button>
+                            <button id="submarine" onClick={this.props.boardPermission}>Add</button>
                         </div>
                     </li>                        
                     <li className="shipyard--ship">
                         <div className="shipyard--ship-dock">
                             <p className="shipyard--ship-dock-type">Patrol Boat</p>
-                            <button>Add</button>
+                            <button id="patrol" onClick={this.props.boardPermission}>Add</button>
                         </div>
                     </li>
                 </ul>

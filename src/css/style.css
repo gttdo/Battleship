@@ -117,8 +117,29 @@ body {
 
 .console {
   background-color: #33b3ac;
+  padding: 3rem;
   grid-row: 3 / 4;
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 60vw 1fr;
+  grid-template-rows: repeat(2, 1fr); }
+  .console > * {
+    background-color: snow;
+    border-radius: 15px;
+    padding: 1.5rem; }
+
+.shipyard {
+  margin-right: 1rem;
+  grid-row: 1 / -1; }
+  .shipyard--list {
+    list-style: none; }
+  .shipyard--ship-dock {
+    display: flex; }
+    .shipyard--ship-dock-type {
+      margin-right: auto; }
+
+.warRoom {
+  margin-bottom: 1rem; }
 
 .footer {
   grid-column: 1 / -1;

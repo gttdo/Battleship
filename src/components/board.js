@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Auxillary from '../hoc/auxillary';
 
 class Board extends Component {
 
@@ -39,7 +38,8 @@ class Board extends Component {
                 key={cellId[i]} 
                 id={cellId[i]}
                 className="board--grid-cell" 
-                onClick={this.selectCell}></div>)
+                onClick={
+                    this.props.activateBoard ? this.selectCell : null}></div>)
         }
 
         return(

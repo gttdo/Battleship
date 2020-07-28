@@ -117,7 +117,7 @@ body {
 
 .console {
   background-color: #33b3ac;
-  padding: 3rem;
+  padding: 1.5rem;
   grid-row: 3 / 4;
   grid-column: 1 / -1;
   display: grid;
@@ -126,17 +126,21 @@ body {
   .console > * {
     background-color: snow;
     border-radius: 15px;
-    padding: 1.5rem; }
+    padding: 1.5rem;
+    text-align: center; }
 
 .shipyard {
   margin-right: 1rem;
   grid-row: 1 / -1; }
   .shipyard--list {
-    list-style: none; }
+    list-style: none;
+    font-size: 1.5rem; }
   .shipyard--ship-dock {
     display: flex; }
     .shipyard--ship-dock-type {
       margin-right: auto; }
+  .shipyard--ship:not(:last-child) {
+    margin-bottom: 0.5rem; }
 
 .warRoom {
   margin-bottom: 1rem; }
